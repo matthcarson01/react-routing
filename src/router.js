@@ -1,13 +1,13 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Store from 'src/components/Store/Store.js';
-import Details from 'src/components/Details/Details.js';
-import Checkout from 'src/components/Checkout/Checkout.js';
+import Store from './components/Store/Store';
+import Details from './components/Details/Details';
+import Checkout from './components/Checkout/Checkout';
 
 export default(
     <Switch>
         <Route exact path='/' component={Store} />
-        <Route path='/details/:id' compnent={Details} />
+        <Route path='/details/:id' component={Details} />
         <Route path='/checkout' component={Checkout} />
     </Switch>
 );
